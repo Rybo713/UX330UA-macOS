@@ -15,7 +15,7 @@ RAM: 8GB DDR3
 
 Display: FHD, 1920x1080
 
-Storage: Micron 256GB 
+Storage: SATA 3 Micron 256GB 
 
 Wifi: Intel Dual Band Wireless-AC 8260
 
@@ -51,7 +51,7 @@ If you use a USB wifi adapter look for drivers from that model
 1. Create a macOS installation disk with a 16GB or more USB
 2. Install clover with UEFI only and drivers64UEFI - choose OsxAptioFix2Drv-64
 3. Replace the original config.plist to the one I have provided
-4. Place the kexts in CLOVER/kexts/other and the HFSPlus.efi in /CLOVER/drivers64UEFI 
+4. Place the kexts in CLOVER/kexts/other and the HFSPlus.efi in /CLOVER/drivers64UEFI
 5. Boot into USB
 6. Install macOS
 
