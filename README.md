@@ -29,11 +29,13 @@ If you use a USB wifi adapter look for drivers from that model
 - Battery
 - USB Ports
 - Trackpad 
+- Webcam
 
 # What doesn't work
 - Backlight
 - Brightness
 - Wifi (With 8260)
+- Bluetooth
 - Sleep / Wake
 
 # Pre-Installation
