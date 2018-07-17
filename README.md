@@ -5,13 +5,13 @@ This project is to give the UX330UA an almost complete and functional build of m
 ## My Specs 
 Model: UX330UAK
 
-Bios: 305
+Bios: 308
 
 CPU: Intel i5-7200U
 
 GPU: Intel HD620
 
-RAM: 8GB DDR3 
+RAM: 8GB LPDDR3 
 
 Display: FHD, 1920x1080
 
@@ -51,7 +51,7 @@ If you use a USB wifi adapter look for drivers from that model
   
 # Installation
 1. Create a macOS installation disk with a 16GB or more USB
-2. Install clover with UEFI only and drivers64UEFI - choose OsxAptioFix2Drv-64
+2. Install clover with UEFI only and in drivers64UEFI - choose OsxAptioFix2Drv-64
 3. Replace the original config.plist to the one I have provided
 4. Place the kexts in CLOVER/kexts/other and the HFSPlus.efi in /CLOVER/drivers64UEFI
 5. Boot into USB
@@ -62,7 +62,7 @@ If you use a USB wifi adapter look for drivers from that model
 2. Install Clover with these options: 
   - Install for UEFI booting only
   - Install Clover in the ESP
-  - Themes - You can pick anything Theme you want.
+  - Themes - You can pick any theme you want
   - Drivers64UEFI / EmuVariableUefi-64, FSInject-64, HFSPlus, and OsxAptioFix2Drv-64
   - Install all RC scripts on all other bootable OS X volume
   - Optional RC Scripts / disable sleep proxy client
@@ -77,7 +77,7 @@ If you use a USB wifi adapter look for drivers from that model
 9. Reboot and make sure everything works
 10. Now use KextWizard to place the rest of the kexts that I provided into S/L/E 
 11. Reboot once again to see if all are working. 
-12. Now you have a almost completely working hackintosh!
+12. Now you have an almost completely working hackintosh!
 
 ## Credits
 Ryan Wong
