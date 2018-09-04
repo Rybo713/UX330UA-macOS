@@ -5,7 +5,7 @@ This project is to give the UX330UA an almost complete and functional build of m
 ## My Specs 
 Model: UX330UAK
 
-Bios: 308
+Bios: 311
 
 CPU: Intel i5-7200U
 
