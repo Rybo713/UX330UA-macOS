@@ -15,7 +15,7 @@ RAM: 8GB LPDDR3
 
 Display: FHD, 1920x1080
 
-Storage: SATA 3 Micron 256GB 
+Storage: NMVe Intel 600P 256GB 
 
 Wifi: Intel Dual Band Wireless-AC 8260
 
@@ -30,10 +30,10 @@ If you use a USB wifi adapter look for drivers from that model
 - USB Ports
 - Trackpad 
 - Webcam
+- Brightness
 
 # What doesn't work
 - Backlight
-- Brightness
 - Wifi (With 8260)
 - Bluetooth
 - Sleep / Wake
