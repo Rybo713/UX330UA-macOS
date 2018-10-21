@@ -1,6 +1,6 @@
-# WIP (Jan 26, 2018)
+# WIP (Oct 21, 2018)
 # macOS for Asus Zenbook UX330UA 
-This project is to give the UX330UA an almost complete and functional build of macOS <S>10.13 High Sierra</S> 10.12 Sierra
+This project is to give the UX330UA an almost complete and functional build of macOS 10.14 Mojave
 
 ## My Specs 
 Model: UX330UAK
