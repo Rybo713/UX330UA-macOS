@@ -15,7 +15,7 @@ RAM: 8GB LPDDR3
 
 Display: FHD, 1920x1080
 
-Storage: NMVe Adata XPG X2 8200 Pro 256GB
+Storage: NMVe Adata XPG SX8200 Pro 256GB
 
 Wifi: Broadcom DW1560
 
