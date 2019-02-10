@@ -1,11 +1,11 @@
-# WIP (Oct 21, 2018)
+# WIP (Feb 9, 2019)
 # macOS for Asus Zenbook UX330UA 
 This project is to give the UX330UA an almost complete and functional build of macOS 10.14 Mojave
 
 ## My Specs 
 Model: UX330UAK
 
-Bios: 311
+Bios: 312
 
 CPU: Intel i5-7200U
 
@@ -15,9 +15,9 @@ RAM: 8GB LPDDR3
 
 Display: FHD, 1920x1080
 
-Storage: NMVe Intel 600P 256GB 
+Storage: NMVe Adata XPG X2 8200 Pro 256GB
 
-Wifi: Intel Dual Band Wireless-AC 8260
+Wifi: Broadcom DW1560
 
 ## Note
 Your laptop may or may not have the exact specs as mine. Results may vary. If you need help, please ask.
