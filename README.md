@@ -24,20 +24,22 @@ Wifi: Broadcom DW1560
 Your laptop may or may not have the exact specs as mine. Results may vary. If you need help, please ask.
 If you use a USB wifi adapter look for drivers from that model
 
-# What Works
+# What Works (Using the guide above)
 - Audio
 - Keyboard
 - Battery
 - USB Ports
 - Trackpad 
 - Webcam
-- Brightness
-
-# What doesn't work
-- Backlight
-- Wifi (With 8260)
-- Bluetooth
+- Microphone
+- Display Brightness
+- SD Card Reader
 - Sleep / Wake
+- Wifi 
+- Bluetooth
+
+# What doesn't work (Using the guide above)
+- Touch ID
 
 # Pre-Installation
 1. Replace original wifi chipset with a DW1560 (Recommended) or use a USB wifi adapter (Not recommended)
