@@ -1,21 +1,22 @@
-# WIP (Feb 9, 2019)
+# OUTDATED: 
+Use https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH
 # macOS for Asus Zenbook UX330UA 
 This project is to give the UX330UA an almost complete and functional build of macOS 10.14 Mojave
 
 ## My Specs 
 Model: UX330UAK
 
-Bios: 312
+Bios: 311
 
 CPU: Intel i5-7200U
 
 GPU: Intel HD620
 
-RAM: 8GB LPDDR3 
+RAM: 8GB LPDDR3
 
 Display: FHD, 1920x1080
 
-Storage: NMVe Adata XPG SX8200 Pro 256GB
+Storage: PCIE x2 NMVe Adata XPG SX8200 Pro 256GB
 
 Wifi: Broadcom DW1560
 
