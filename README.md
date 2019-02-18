@@ -37,9 +37,10 @@ If you use a USB wifi adapter look for drivers from that model
 - Sleep / Wake
 - Wifi 
 - Bluetooth
+- Auto Brightness
 
 # What doesn't work (Using the guide above)
-- Touch ID
+- Touch ID (It will never work)
 
 # Pre-Installation
 1. Replace original wifi chipset with a DW1560 (Recommended) or use a USB wifi adapter (Not recommended)
