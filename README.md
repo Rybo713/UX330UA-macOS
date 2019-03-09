@@ -52,9 +52,6 @@ If you use a USB wifi adapter look for drivers from that model
   - Change boot priority to USB
 
 ## Credits
-Ryan Wong
-
-## Special Thanks
-hieplpvip (For the amazing Asus Zenbook Guide)
-the-darkvoid (For the modified VoodooI2C Kext)
+- hieplpvip (For the amazing Asus Zenbook Guide) https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH
+- the-darkvoid (For the modified VoodooI2C Kext) https://github.com/the-darkvoid/XPS9360-macOS
 
