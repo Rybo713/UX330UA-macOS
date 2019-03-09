@@ -1,4 +1,6 @@
 # macOS for Asus Zenbook UX330UA (March 9, 2019)
+![UX330UAK](https://laptoping.com/specs/wp-content/uploads/2017/05/Asus-Zenbook-UX330UA-AH54-AH5Q-2.png)
+
 This project is to give the UX330UA a complete and functional build of macOS 10.14 Mojave using the guide from  https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH with modified kexts.
 
 ## My Specs 
@@ -52,6 +54,7 @@ If you use a USB wifi adapter look for drivers from that model
   - **Enable** Launch CSM 
   - Set DVMT to **64M**
   - Change boot priority to USB
+4. For Installation go to the wiki: https://github.com/Rybo713/UX330UA-macOS/wiki/Installation
 
 ## Credits
 - hieplpvip (For the amazing Asus Zenbook Guide) https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH
