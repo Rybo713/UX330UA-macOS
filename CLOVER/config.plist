@@ -2,36 +2,42 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>#Comment</key>
-	<string>This file is for 10.12.6+ with native KabyLake support</string>
 	<key>ACPI</key>
 	<dict>
 		<key>AutoMerge</key>
 		<true/>
+		<key>Comment-DisabledAML</key>
+		<string>Disable other forms of CPU PM due to SSDT/Generate/PluginType=true</string>
 		<key>DSDT</key>
 		<dict>
+			<key>DropOEM_DSM</key>
+			<true/>
 			<key>Fixes</key>
 			<dict>
-				<key>FixHeaders</key>
-				<true/>
-				<key>#Comment-IRQ Fix</key>
-				<string>The following fixes may be needed for onboard audio/USB/etc</string>
-				<key>FixTMR</key>
-				<false/>
-				<key>FixRTC</key>
-				<false/>
-				<key>FixIPIC</key>
-				<false/>
 				<key>FixHPET</key>
-				<false/>
+				<true/>
+				<key>FixIPIC</key>
+				<true/>
+				<key>FixMutex</key>
+				<true/>
+				<key>FixRTC</key>
+				<true/>
+				<key>FixTMR</key>
+				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
 				<dict>
 					<key>Comment</key>
+					<string>change APSS to APXX</string>
+					<key>Find</key>
+					<data>QVBTUw==</data>
+					<key>Replace</key>
+					<data>QVBYWA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
-					<key>Disabled</key>
-					<true/>
 					<key>Find</key>
 					<data>T1NJRA==</data>
 					<key>Replace</key>
@@ -40,8 +46,6 @@
 				<dict>
 					<key>Comment</key>
 					<string>change _OSI to XOSI</string>
-					<key>Disabled</key>
-					<true/>
 					<key>Find</key>
 					<data>X09TSQ==</data>
 					<key>Replace</key>
@@ -50,8 +54,6 @@
 				<dict>
 					<key>Comment</key>
 					<string>change _DSM to XDSM</string>
-					<key>Disabled</key>
-					<true/>
 					<key>Find</key>
 					<data>X0RTTQ==</data>
 					<key>Replace</key>
@@ -59,33 +61,43 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change EC0 to EC</string>
-					<key>Disabled</key>
-					<true/>
+					<string>change EHC1 to EH01</string>
 					<key>Find</key>
-					<data>RUMwXw==</data>
+					<data>RUhDMQ==</data>
 					<key>Replace</key>
-					<data>RUNfXw==</data>
+					<data>RUgwMQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change H_EC to EC</string>
-					<key>Disabled</key>
-					<true/>
+					<string>change EHC2 to EH02</string>
 					<key>Find</key>
-					<data>SF9FQw==</data>
+					<data>RUhDMg==</data>
 					<key>Replace</key>
-					<data>RUNfXw==</data>
+					<data>RUgwMg==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change ECDV to EC</string>
-					<key>Disabled</key>
-					<true/>
+					<string>change EUSB to EH01</string>
 					<key>Find</key>
-					<data>RUNEVg==</data>
+					<data>RVVTQg==</data>
 					<key>Replace</key>
-					<data>RUNfXw==</data>
+					<data>RUgwMQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change USBE to EH02</string>
+					<key>Find</key>
+					<data>VVNCRQ==</data>
+					<key>Replace</key>
+					<data>RUgwMg==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change GFX0 to IGPU</string>
+					<key>Find</key>
+					<data>R0ZYMA==</data>
+					<key>Replace</key>
+					<data>SUdQVQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -94,6 +106,22 @@
 					<data>SERBUw==</data>
 					<key>Replace</key>
 					<data>SERFRg==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change AZAL to HDEF</string>
+					<key>Find</key>
+					<data>QVpBTA==</data>
+					<key>Replace</key>
+					<data>SERFRg==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change B0D3 to HDAU</string>
+					<key>Find</key>
+					<data>QjBEMw==</data>
+					<key>Replace</key>
+					<data>SERBVQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -113,30 +141,208 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
+					<string>change SAT0 to SATA</string>
 					<key>Find</key>
-					<data>R0ZYMA==</data>
+					<data>U0FUMA==</data>
 					<key>Replace</key>
-					<data>SUdQVQ==</data>
+					<data>U0FUQQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change PCI0.VID to IGPU #1 (Thinkpad)</string>
+					<string>change LPC to LPCB</string>
 					<key>Find</key>
-					<data>UENJMFZJRF8=</data>
+					<data>TFBDXw==</data>
 					<key>Replace</key>
-					<data>UENJMElHUFU=</data>
+					<data>TFBDQg==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change PCI0.VID to IGPU #2 (Thinkpad)</string>
+					<string>change _REG to XREG in EC0</string>
 					<key>Find</key>
-					<data>VklEXwhfQURSDAAAAgA=</data>
+					<data>X1JFRwKgCw==</data>
 					<key>Replace</key>
-					<data>SUdQVQhfQURSDAAAAgA=</data>
+					<data>WFJFRwKgCw==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_PTS,1,N) to ZPTS, pair with SSDT-PTSWAK.aml</string>
+					<key>Find</key>
+					<data>X1BUUwE=</data>
+					<key>Replace</key>
+					<data>WlBUUwE=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_PTS,1,S) to ZPTS, pair with SSDT-PTSWAK.aml</string>
+					<key>Find</key>
+					<data>X1BUUwk=</data>
+					<key>Replace</key>
+					<data>WlBUUwk=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_WAK,1,N) to ZWAK, pair with SSDT-PTSWAK.aml</string>
+					<key>Find</key>
+					<data>X1dBSwE=</data>
+					<key>Replace</key>
+					<data>WldBSwE=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_WAK,1,S) to ZWAK, pair with SSDT-PTSWAK.aml</string>
+					<key>Find</key>
+					<data>X1dBSwk=</data>
+					<key>Replace</key>
+					<data>WldBSwk=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(GPRW,2,N) to XPRW</string>
+					<key>Find</key>
+					<data>R1BSVwI=</data>
+					<key>Replace</key>
+					<data>WFBSVwI=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery: Rename Method(_BIX,0) to Method(XBIX,0)</string>
+					<key>Find</key>
+					<data>X0JJWAA=</data>
+					<key>Replace</key>
+					<data>WEJJWAA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery: Rename Method(BIFA,0) to Method(XBIF,0)</string>
+					<key>Find</key>
+					<data>QklGQQA=</data>
+					<key>Replace</key>
+					<data>WEJJRgA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery: Rename Method(SMBR,3,Serialized) to Method(XSMR,3,Serialized)</string>
+					<key>Find</key>
+					<data>U01CUgs=</data>
+					<key>Replace</key>
+					<data>WFNNUgs=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery: Rename Method(SMBW,5,Serialized) to Method(XSMW,5,Serialized)</string>
+					<key>Find</key>
+					<data>U01CVw0=</data>
+					<key>Replace</key>
+					<data>WFNNVw0=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery: Rename Method(FBST,4) to Method(XBST,4)</string>
+					<key>Find</key>
+					<data>RkJTVAQ=</data>
+					<key>Replace</key>
+					<data>WEJTVAQ=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ALS: change Method(RALS,0,S) XALS</string>
+					<key>Find</key>
+					<data>UkFMUwA=</data>
+					<key>Replace</key>
+					<data>WEFMUwA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_Q0A,0,NS) to XQ0A</string>
+					<key>Find</key>
+					<data>X1EwQQA=</data>
+					<key>Replace</key>
+					<data>WFEwQQA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_Q0B,0,NS) to XQ0B</string>
+					<key>Find</key>
+					<data>X1EwQgA=</data>
+					<key>Replace</key>
+					<data>WFEwQgA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_Q0E,0,NS) to XQ0E</string>
+					<key>Find</key>
+					<data>X1EwRQA=</data>
+					<key>Replace</key>
+					<data>WFEwRQA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_Q0F,0,NS) to XQ0F</string>
+					<key>Find</key>
+					<data>X1EwRgA=</data>
+					<key>Replace</key>
+					<data>WFEwRgA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_QCD,0,NS) to XQCD</string>
+					<key>Find</key>
+					<data>X1FDRAA=</data>
+					<key>Replace</key>
+					<data>WFFDRAA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_Q11,0,NS) to XQ11</string>
+					<key>Find</key>
+					<data>X1ExMQg=</data>
+					<key>Replace</key>
+					<data>WFExMQg=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_Q76,0,NS) to XQ76</string>
+					<key>Find</key>
+					<data>X1E3NgA=</data>
+					<key>Replace</key>
+					<data>WFE3NgA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _STA methods in MATH and LDR2 device to XSTA</string>
+					<key>Find</key>
+					<data>X1NUQQCgDZNQ</data>
+					<key>Replace</key>
+					<data>WFNUQQCgDZNQ</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_STA,0,NS) in GPI0 to XSTA</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>X1NUQQCgCZNTQlJH</data>
+					<key>Replace</key>
+					<data>WFNUQQCgCZNTQlJH</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_CRS,0,S) in ETPD to XCRS</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>X0NSUwgIU0JGSQ==</data>
+					<key>Replace</key>
+					<data>WENSUwgIU0JGSQ==</data>
 				</dict>
 			</array>
 		</dict>
+		<key>DisabledAML</key>
+		<array>
+			<string>SSDT.aml</string>
+			<string>SSDT-XCPM.aml</string>
+			<string>SSDT-PluginType1.aml</string>
+		</array>
 		<key>DropTables</key>
 		<array>
 			<dict>
@@ -154,6 +360,8 @@
 				<string>xh_rvp10</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<true/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -165,132 +373,122 @@
 			</dict>
 			<key>NoOemTableId</key>
 			<true/>
-			<key>NoDynamicExtract</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>kext-dev-mode=1 dart=0 nv_disable=1 -disablegfxfirmware</string>
-		<key>#DefaultVolume</key>
+		<string></string>
+		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>5</integer>
+		<integer>3</integer>
 	</dict>
+	<key>Comment</key>
+	<string>This config is created by @hieplpvip for UX330 (KabyLake)</string>
 	<key>Devices</key>
 	<dict>
 		<key>AddProperties</key>
 		<array>
 			<dict>
+				<key>Comment</key>
+				<string>Inject &quot;name&quot; as (data)&quot;#display&quot; to disable graphics drivers on NVidia</string>
 				<key>Device</key>
 				<string>NVidia</string>
 				<key>Key</key>
 				<string>name</string>
 				<key>Value</key>
 				<data>I2Rpc3BsYXkA</data>
-				<key>Comment</key>
-				<string>Inject &quot;name&quot; as (data)&quot;#display&quot; to disable graphics drivers on NVidia</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>Inject &quot;IOName&quot; as &quot;#display&quot; to disable graphics drivers on NVidia</string>
 				<key>Device</key>
 				<string>NVidia</string>
 				<key>Key</key>
 				<string>IOName</string>
 				<key>Value</key>
 				<string>#display</string>
-				<key>Comment</key>
-				<string>Inject &quot;IOName&quot; as &quot;#display&quot; to disable graphics drivers on NVidia</string>
 			</dict>
-      		<dict>
-         		<key>Device</key>
-           	    <string>IntelGFX</string>
-                <key>Key</key>
-                <string>AAPL,GfxYTile</string>
-                <key>Value</key>
-                <data>
-                AQAAAA==
-                </data>
-            </dict>
 			<dict>
+				<key>Comment</key>
+				<string>Inject bogus class-code to prevent graphics drivers loading for NVidia</string>
 				<key>Device</key>
 				<string>NVidia</string>
 				<key>Key</key>
 				<string>class-code</string>
 				<key>Value</key>
 				<data>/////w==</data>
-				<key>Comment</key>
-				<string>Inject bogus class-code to prevent graphics drivers loading for NVidia</string>
-			</dict>
-		</array>
-		<key>#AddProperties</key>
-		<array>
-			<dict>
-				<key>Device</key>
-				<string>IntelGFX</string>
-				<key>Key</key>
-				<string>hda-gfx</string>
-				<key>Value</key>
-				<data>b25ib2FyZC0xAA==</data>
-				<key>Comment</key>
-				<string>hda-gfx=onboard-1 for HDMI audio</string>
 			</dict>
 			<dict>
-				<key>Device</key>
-				<string>HDA</string>
-				<key>Key</key>
-				<string>hda-gfx</string>
-				<key>Value</key>
-				<data>b25ib2FyZC0xAA==</data>
 				<key>Comment</key>
-				<string>hda-gfx=onboard-1 for HDMI audio</string>
+				<string>Inject &quot;name&quot; as (data)&quot;#display&quot; to disable graphics drivers on AMD</string>
+				<key>Device</key>
+				<string>ATI</string>
+				<key>Key</key>
+				<string>name</string>
+				<key>Value</key>
+				<data>I2Rpc3BsYXkA</data>
 			</dict>
 			<dict>
-				<key>Device</key>
-				<string>HDA</string>
-				<key>Key</key>
-				<string>layout-id</string>
-				<key>Value</key>
-				<data>AwAAAA==</data>
 				<key>Comment</key>
-				<string>layout-id=3</string>
+				<string>Inject &quot;IOName&quot; as &quot;#display&quot; to disable graphics drivers on AMD</string>
+				<key>Device</key>
+				<string>ATI</string>
+				<key>Key</key>
+				<string>IOName</string>
+				<key>Value</key>
+				<string>#display</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>Inject bogus class-code to prevent graphics drivers loading for AMD</string>
 				<key>Device</key>
-				<string>HDA</string>
+				<string>ATI</string>
 				<key>Key</key>
-				<string>PinConfigurations</string>
+				<string>class-code</string>
 				<key>Value</key>
-				<data></data>
+				<data>/////w==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Inject bogus vendor-id to prevent graphics drivers loading for AMD</string>
+				<key>Device</key>
+				<string>ATI</string>
+				<key>Key</key>
+				<string>vendor-id</string>
+				<key>Value</key>
+				<data>//8AAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Inject bogus device-id to prevent graphics drivers loading for AMD</string>
+				<key>Device</key>
+				<string>ATI</string>
+				<key>Key</key>
+				<string>device-id</string>
+				<key>Value</key>
+				<data>//8AAA==</data>
 			</dict>
 		</array>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>0</integer>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>#Kaby Lake-Comment</key>
-			<string>To avoid automatic Clover fake device-id (Skylake) injection</string>
-			<key>IntelGFX</key>
-			<string>0x59168086</string>
+			<string>0</string>
 		</dict>
 		<key>USB</key>
 		<dict>
-			<key>FixOwnership</key>
-			<true/>
 			<key>AddClockID</key>
+			<true/>
+			<key>FixOwnership</key>
 			<true/>
 			<key>Inject</key>
 			<true/>
 		</dict>
-		<key>UseIntelHDMI</key>
-		<false/>
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
@@ -298,6 +496,8 @@
 	</array>
 	<key>GUI</key>
 	<dict>
+		<key>#ScreenResolution</key>
+		<string>1920x1080</string>
 		<key>Custom</key>
 		<dict>
 			<key>Entries</key>
@@ -309,9 +509,9 @@
 					<string>OSXRecovery</string>
 				</dict>
 				<dict>
-					<key>Type</key>
-					<string>Windows</string>
 					<key>Title</key>
+					<string>Windows</string>
+					<key>Type</key>
 					<string>Windows</string>
 				</dict>
 			</array>
@@ -336,28 +536,19 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
-		<key>#ScreenResolution</key>
-		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>BGM</string>
+		<string>Xiaomi</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>EDID</key>
-		<dict>
-			<key>Inject</key>
-			<false/>
-		</dict>
-		<key>ig-platform-id</key>
-		<string>0x591b0000</string>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<true/>
+			<false/>
 			<key>NVidia</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
@@ -366,68 +557,121 @@
 		<true/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
+		<key>ForceKextsToLoad</key>
+		<array>
+			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
+			<string>\System\Library\Extensions\IOGraphicsFamily.kext</string>
+		</array>
 		<key>KernelLapic</key>
 		<true/>
 		<key>KernelPm</key>
 		<true/>
-		<key>ForceKextsToLoad</key>
-		<array>
-			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
-		</array>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>0x591b0000, 32MB BIOS, 19MB framebuffer 9MB cursor bytes (credit RehabMan)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Find</key>
-				<data>AABgAgAAUAE=</data>
-				<key>Replace</key>
-				<data>AAAwAQAAkAA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>0x591b0000, 0105 instead of 0306, HDMI</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Find</key>
-				<data>AgQKAAAIAACHAQAAAwYKAAAEAACHAQAA/wAAAAEAAAAgAAAA</data>
-				<key>Replace</key>
-				<data>AQUKAAAIAACHAQAAAgQKAAAIAACHAQAA/wAAAAEAAAAgAAAA</data>
-			</dict>
-		</array>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
 				<key>Comment</key>
 				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>ILniAAAADzA=</data>
 				<key>Replace</key>
 				<data>ILniAAAAkJA=</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable panic kext logging on 10.13 release kernel (credit vit9696)</string>
+				<key>Find</key>
+				<data>igKEwHRE</data>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Replace</key>
+				<data>igKEwOtE</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable panic kext logging on 10.14 release kernel (credit vit9696)</string>
+				<key>Find</key>
+				<data>igKEwHRC</data>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Replace</key>
+				<data>igKEwOtC</data>
+			</dict>
+		</array>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Find</key>
+				<data>SU9LaXQ=</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleIntelLpssI2CController</string>
+				<key>Replace</key>
+				<data>SU9LaXM=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Find</key>
+				<data>SU9LaXQ=</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleIntelLpssI2C</string>
+				<key>Replace</key>
+				<data>SU9LaXM=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>AEFQUExFIFNTRAA=</data>
+				<key>Name</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>AAAAAAAAAAAAAAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Boot graphics glitch, 10.12 (credit denskop)</string>
+				<key>Find</key>
+				<data>AQAAdSU=</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOGraphicsFamily</string>
+				<key>Replace</key>
+				<data>AQAA6yU=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Boot graphics glitch, 10.13 (based on denskop patch)</string>
+				<key>Find</key>
+				<data>AQAAdSI=</data>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOGraphicsFamily</string>
+				<key>Replace</key>
+				<data>AQAA6yI=</data>
+			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
-		<key>CsrActiveConfig</key>
-		<string>0x67</string>
 		<key>BooterConfig</key>
 		<string>0x28</string>
+		<key>CsrActiveConfig</key>
+		<string>0x67</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>ProductName-Comment</key>
-		<string>Using Haswell MacBookAir6,2 until Clover has support for KabyLake identifiers</string>
 		<key>ProductName</key>
-		<string>MacBookAir6,2</string>
+		<string>MacBookPro14,1</string>
 		<key>Trust</key>
 		<true/>
 	</dict>
