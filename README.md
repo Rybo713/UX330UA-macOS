@@ -1,9 +1,9 @@
 # macOS for Asus Zenbook UX330UAK (March 9, 2019)
 ![UX330UAK](https://laptoping.com/specs/wp-content/uploads/2017/05/Asus-Zenbook-UX330UA-AH54-AH5Q-2.png)
 
-This project is to give the UX330UAK a complete and functional build of macOS 10.14 Mojave using the guide from  https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH with modified kexts.
+This project is to give the UX330UAK a complete and functional build of macOS 10.14.3 Mojave using the guide from  https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH with modified kexts.
 
-## My Specs 
+## My Specs
 Model: UX330UAK
 
 Bios: 311
@@ -20,7 +20,7 @@ Storage: PCIE x2 NMVe Adata XPG SX8200 Pro 256GB
 
 Partition Type: Journaled HFS+ (TRIM Enabled)
 
-Wifi: Broadcom DW1560 
+Wifi: Broadcom DW1560
 
 Bluetooth: Broadcom DW1560
 
@@ -52,13 +52,13 @@ If you use a USB wifi adapter look for drivers from that model
 
 # Pre-Installation
 1. Replace original wifi chipset with a DW1560 (Recommended) or use a USB wifi adapter (Not recommended)
-2. You will have to wipe the entire disk 
+2. You will have to wipe the entire disk
 3. Make sure to upgrade or downgrade to BIOS 311 (BIOS 312 doesn't work)
-4. Change your BIOS settings: 
+4. Change your BIOS settings:
   - **Disable** VT-d
   - **Enable** Legacy USB Support
   - **Disable** Secure Boot
-  - **Enable** Launch CSM 
+  - **Enable** Launch CSM
   - Set DVMT to **64M**
   - Change boot priority to USB
 5. For Installation go to the wiki: https://github.com/Rybo713/UX330UA-macOS/wiki/Installation
