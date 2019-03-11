@@ -11,7 +11,7 @@
 		<key>DSDT</key>
 		<dict>
 			<key>DropOEM_DSM</key>
-			<true/>
+			<false/>
 			<key>Fixes</key>
 			<dict>
 				<key>FixHPET</key>
@@ -388,8 +388,21 @@
 		<key>Timeout</key>
 		<integer>3</integer>
 	</dict>
+	<key>CPU</key>
+	<dict>
+		<key>FrequencyMHz</key>
+		<integer>2700</integer>
+		<key>HWPEnable</key>
+		<true/>
+		<key>TDP</key>
+		<integer>50</integer>
+		<key>Type</key>
+		<string>0x606</string>
+		<key>UseARTFrequency</key>
+		<false/>
+	</dict>
 	<key>Comment</key>
-	<string>This config is created by @hieplpvip for UX330 (KabyLake)</string>
+	<string>This config is created by @hieplpvip for UX330 (KabyLake) Edited by @RyanW713</string>
 	<key>Devices</key>
 	<dict>
 		<key>AddProperties</key>
