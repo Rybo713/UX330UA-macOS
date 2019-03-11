@@ -65,4 +65,4 @@ If you use a USB wifi adapter look for drivers from that model.
 
 ## Credits
 - hieplpvip (For the amazing Asus Zenbook Guide) https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH
-- the-darkvoid (For the modified VoodooI2C Kext and CPUFriend Kext) https://github.com/the-darkvoid/XPS9360-macOS
+- the-darkvoid (For the modified VoodooI2C Kext and CPUFriendDataProvider Kext) https://github.com/the-darkvoid/XPS9360-macOS
