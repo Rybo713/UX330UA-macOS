@@ -1,4 +1,4 @@
-# macOS for Asus Zenbook UX330UAK (March 9, 2019)
+# macOS for Asus Zenbook UX330UAK (March 10, 2019)
 ![UX330UAK](https://laptoping.com/specs/wp-content/uploads/2017/05/Asus-Zenbook-UX330UA-AH54-AH5Q-2.png)
 
 This project is to give the UX330UAK a complete and functional build of macOS 10.14.3 Mojave using the guide from  https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH with modified kexts.
@@ -26,7 +26,7 @@ Bluetooth: Broadcom DW1560
 
 ## Note
 Your laptop may or may not have the exact specs as mine. Results may vary. If you need help, please ask.
-If you use a USB wifi adapter look for drivers from that model
+If you use a USB wifi adapter look for drivers from that model.
 
 # What Works
 - Audio
@@ -37,7 +37,7 @@ If you use a USB wifi adapter look for drivers from that model
 - Battery Manager
 - USB A Ports
 - USB C Port
-- Trackpad (Random Cursor Jumping)
+- Trackpad
 - Webcam
 - Microphone
 - Display Brightness
@@ -65,4 +65,4 @@ If you use a USB wifi adapter look for drivers from that model
 
 ## Credits
 - hieplpvip (For the amazing Asus Zenbook Guide) https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH
-- the-darkvoid (For the modified VoodooI2C Kext) https://github.com/the-darkvoid/XPS9360-macOS
+- the-darkvoid (For the modified VoodooI2C Kext and CPUFriend Kext) https://github.com/the-darkvoid/XPS9360-macOS
