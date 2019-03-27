@@ -18,7 +18,7 @@ Display: FHD, 1920x1080
 
 Storage: PCIE x2 NMVe Adata XPG SX8200 Pro 256GB
 
-Partition Type: Journaled HFS+ (TRIM Enabled)
+Partition Type: APFS (TRIM automatically enabled)
 
 Wifi: Broadcom DW1560
 
