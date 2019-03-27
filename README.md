@@ -1,4 +1,4 @@
-# macOS for Asus Zenbook UX330UAK (March 26, 2019)
+# macOS for Asus Zenbook UX330UAK (March 27, 2019)
 ![UX330UAK](https://laptoping.com/specs/wp-content/uploads/2017/05/Asus-Zenbook-UX330UA-AH54-AH5Q-2.png)
 
 This project is to give the UX330UAK a complete and functional build of macOS 10.14.4 Mojave using the guide from  https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH with modified kexts.
@@ -18,7 +18,7 @@ Display: FHD, 1920x1080
 
 Storage: PCIE x2 NMVe Adata XPG SX8200 Pro 256GB
 
-Partition Type: Journaled HFS+ (TRIM Enabled)
+Partition Type: APFS (TRIM automatically enabled)
 
 Wifi: Broadcom DW1560
 
