@@ -16,7 +16,7 @@ RAM: 1867MHz Micron 8GB Dual Channel LPDDR3
 
 Display: FHD, 1920x1080
 
-Storage: PCIE x2 NMVe Adata XPG SX8200 Pro 256GB
+Storage: PCI-E x2 NMVe Adata XPG SX8200 Pro 256GB
 
 Partition Type: APFS (TRIM automatically enabled)
 
@@ -48,7 +48,7 @@ If you use a USB wifi adapter look for drivers from that model.
 - Auto Brightness
 
 # What doesn't work
-- Touch ID (It will never work) (Disabled)
+- Fingerprint sensor - Touch ID (It will never work) (Disabled)
 
 # Pre-Installation
 1. Replace original wifi chipset with a DW1560 (Recommended) or use a USB wifi adapter (Not recommended)
