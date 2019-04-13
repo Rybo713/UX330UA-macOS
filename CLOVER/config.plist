@@ -506,6 +506,7 @@
 	<key>DisableDrivers</key>
 	<array>
 		<string>VBoxHfs</string>
+		<string>SMCHelper</string>
 	</array>
 	<key>GUI</key>
 	<dict>
