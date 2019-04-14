@@ -1,7 +1,7 @@
 # macOS for Asus Zenbook UX330UAK (April 13, 2019)
 ![UX330UAK](https://laptoping.com/specs/wp-content/uploads/2017/05/Asus-Zenbook-UX330UA-AH54-AH5Q-2.png)
 
-This project is to give the UX330UAK a complete and functional build of macOS 10.14.4 Mojave using the guide from  https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH with modified kexts.
+This project is to give the UX330UAK a complete and functional build of macOS `10.14.4` Mojave using the guide from  https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH with modified kexts.
 
 ## My Specs
 Model: UX330UAK
@@ -19,6 +19,8 @@ Display: FHD, 1920x1080
 Storage: PCI-E x2 NMVe Adata XPG SX8200 Pro 256GB
 
 Partition Type: APFS (TRIM automatically enabled)
+
+SD Card Reader: Alcor Micro, Corp. (0x6366)
 
 Wifi: Broadcom DW1560
 
@@ -49,6 +51,12 @@ If you use a USB wifi adapter look for drivers from that model.
 
 # What doesn't work
 - Fingerprint sensor - Touch ID (It will never work) (Disabled)
+
+# Bugs
+- Closing the lid to sleep doesn't work (For workaround: Go to  on the status bar and press sleep)
+- macOS doesn't recognize bluetooth after waking from sleep (Says Bluetooth: Not Available)
+- Display sometimes blinks for a split second (Not very noticable)
+- Auto brightness is very inconsistent (Goes up and down for no reason)
 
 # Pre-Installation
 1. Replace original wifi chipset with a DW1560 (Recommended) or use a USB wifi adapter (Not recommended)
