@@ -1,7 +1,7 @@
 # macOS for Asus Zenbook UX330UAK (April 13, 2019)
 ![UX330UAK](https://laptoping.com/specs/wp-content/uploads/2017/05/Asus-Zenbook-UX330UA-AH54-AH5Q-2.png)
 
-This project is to give the UX330UAK a complete and functional build of macOS `10.14.4` Mojave using the guide from  https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH with modified kexts.
+This project is to give the UX330UAK a complete and functional build of macOS `10.14.4` Mojave using the guide from  [here](https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH) with modified kexts.
 
 ## My Specs
 Model: UX330UAK
@@ -39,7 +39,7 @@ If you use a USB wifi adapter look for drivers from that model.
 - Battery Manager
 - USB A Ports
 - USB C Port
-- Trackpad
+- Trackpad, with gestures
 - Webcam
 - Microphone
 - Display Brightness
@@ -54,9 +54,9 @@ If you use a USB wifi adapter look for drivers from that model.
 
 # Bugs
 - Closing the lid to sleep doesn't work (For workaround: Go to  on the status bar and press sleep)
-- macOS doesn't recognize bluetooth after waking from sleep (Says Bluetooth: Not Available)
+- ~~macOS doesn't recognize bluetooth after waking from sleep (Says Bluetooth: Not Available)~~
 - Display sometimes blinks for a split second (Not very noticable)
-- Auto brightness is very inconsistent (Goes up and down for no reason)
+- Auto brightness is very inconsistent (Goes up and down for no reason) (I just turned it off)
 
 # Pre-Installation
 1. Replace original wifi chipset with a DW1560 (Recommended) or use a USB wifi adapter (Not recommended)
@@ -69,10 +69,10 @@ If you use a USB wifi adapter look for drivers from that model.
   - **Enable** Launch CSM
   - Set DVMT to **64M**
   - Change boot priority to USB
-5. For Installation go to the wiki: https://github.com/Rybo713/UX330UA-macOS/wiki/Installation
+5. For Installation go to the wiki: [Wiki](https://github.com/Rybo713/UX330UA-macOS/wiki/Installation)
 
 # Undervolting
-- Follow the guide: https://www.insanelymac.com/forum/topic/331775-guide-how-to-undervolt-your-haswell-and-above-cpu/
+- Follow the guide: [Undervolt Guide](https://www.insanelymac.com/forum/topic/331775-guide-how-to-undervolt-your-haswell-and-above-cpu/)
 
 ## Credits
 - hieplpvip (For the amazing Asus Zenbook Guide) https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH
