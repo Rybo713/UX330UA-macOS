@@ -69,10 +69,10 @@ If you use a USB wifi adapter look for drivers from that model.
   - **Enable** Launch CSM
   - Set DVMT to **64M**
   - Change boot priority to USB
-5. For Installation go to the wiki: [Wiki](https://github.com/Rybo713/UX330UA-macOS/wiki/Installation)
+5. For Installation go to the [wiki](https://github.com/Rybo713/UX330UA-macOS/wiki/Installation).
 
 # Undervolting
-- Follow the guide: [Undervolt Guide](https://www.insanelymac.com/forum/topic/331775-guide-how-to-undervolt-your-haswell-and-above-cpu/)
+- Follow the [guide](https://www.insanelymac.com/forum/topic/331775-guide-how-to-undervolt-your-haswell-and-above-cpu/).
 
 ## Credits
 - hieplpvip (For the amazing Asus Zenbook Guide) https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH
