@@ -1,7 +1,7 @@
 # macOS for Asus Zenbook UX330UAK (May 13, 2019)
 ![UX330UAK](https://laptoping.com/specs/wp-content/uploads/2017/05/Asus-Zenbook-UX330UA-AH54-AH5Q-2.png)
 
-This project is to give the UX330UAK a complete and functional build of macOS `10.14.4` Mojave using the guide from  [here](https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH) with modified kexts.
+This project is to give the UX330UAK a complete and functional build of macOS Mojave `10.14.5` using the guide from  [here](https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH) with modified kexts.
 
 ## My Specs
 Model: UX330UAK
@@ -14,11 +14,11 @@ GPU: Intel HD620 1536MB (0x5916)
 
 RAM: 1867MHz Micron 8GB Dual Channel LPDDR3
 
-Display: FHD, 1920x1080
+Display: 13.3" IPS Anti-Glare FHD, 1920x1080
 
 Storage: PCI-E x2 NMVe Adata XPG SX8200 Pro 256GB
 
-Partition Type: APFS (TRIM automatically enabled)
+Partition Type: APFS (TRIM automatically enabled by APFS)
 
 SD Card Reader: Alcor Micro, Corp. (0x6366)
 
