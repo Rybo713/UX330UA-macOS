@@ -78,7 +78,7 @@ If you use a USB wifi adapter look for drivers from that model.
   - **Enable** Launch CSM
   - Set DVMT to **64M**
   - Change boot priority to USB
-5. For Installation go to the [wiki](https://github.com/Rybo713/UX330UA-macOS/wiki/Installation).
+5. For Installation go to the [wiki](https://github.com/Rybo713/UX330UA-macOS/wiki/Installation-(OpenCore-Bootloader)).
 
 # Undervolting
 - Follow the [guide](https://www.insanelymac.com/forum/topic/331775-guide-how-to-undervolt-your-haswell-and-above-cpu/).
