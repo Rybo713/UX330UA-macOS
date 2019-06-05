@@ -1,4 +1,4 @@
-# macOS for Asus Zenbook UX330UAK (May 28, 2019)
+# macOS for Asus Zenbook UX330UAK (June 4, 2019)
 ![UX330UAK](https://laptoping.com/specs/wp-content/uploads/2017/05/Asus-Zenbook-UX330UA-AH54-AH5Q-2.png)
 
 This project is to give the UX330UAK a complete and functional build of macOS Mojave `10.14.5` using the guide from  [here](https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH) with modified kexts.
@@ -14,7 +14,7 @@ GPU: Intel HD620 1536MB (0x5916)
 
 RAM: 1867MHz Micron 8GB Dual Channel LPDDR3
 
-Display: 13.3" IPS Anti-Glare FHD, 1920x1080, 60Hz
+Display: 13.3" AUO272D IPS Anti-Glare FHD, 1920x1080, 60Hz
 
 Storage: PCI-E x2 NMVe Adata XPG SX8200 Pro 256GB
 
@@ -31,7 +31,7 @@ Your laptop may or may not have the exact specs as mine. Results may vary. If yo
 If you use a USB wifi adapter look for drivers from that model.
 
 ## Tested Configurations
-- macOS 10.14.3 - 10.14.5 (18F132)
+- macOS 10.14.3 (18D42) - 10.14.5 (18F132)
 - BIOS 311
 
 # What Works
