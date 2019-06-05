@@ -799,7 +799,7 @@
 		<key>Debug</key>
 		<dict>
 			<key>DisableWatchDog</key>
-			<true/>
+			<false/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
@@ -906,7 +906,7 @@
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>DisableWatchDog</key>
-			<true/>
+			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>IgnoreTextInGraphics</key>
