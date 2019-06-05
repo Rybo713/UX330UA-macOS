@@ -1,4 +1,4 @@
-# Warning: Experimental Branch
+# Warning: Experimental Branch (No Support)
 ## Using OpenCore Bootloader
 
 # macOS for Asus Zenbook UX330UAK (June 5, 2019)
