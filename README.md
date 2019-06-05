@@ -1,4 +1,4 @@
-# macOS for Asus Zenbook UX330UAK (June 4, 2019)
+# macOS for Asus Zenbook UX330UAK (June 5, 2019)
 ![UX330UAK](https://laptoping.com/specs/wp-content/uploads/2017/05/Asus-Zenbook-UX330UA-AH54-AH5Q-2.png)
 
 This project is to give the UX330UAK a complete and functional build of macOS Mojave `10.14.5` using the guide from  [here](https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH) with modified kexts.
@@ -25,6 +25,8 @@ SD Card Reader: Alcor Micro, Corp. (0x6366)
 Wifi: Broadcom DW1560
 
 Bluetooth: Broadcom DW1560
+
+Bootloader: Clover v2.4k_r4928
 
 ## Note
 Your laptop may or may not have the exact specs as mine. Results may vary. If you need help, please ask.
