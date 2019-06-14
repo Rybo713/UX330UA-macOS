@@ -1,4 +1,4 @@
-# macOS for Asus Zenbook UX330UAK (June 5, 2019)
+# macOS for Asus Zenbook UX330UAK (June 14, 2019)
 ![UX330UAK](https://laptoping.com/specs/wp-content/uploads/2017/05/Asus-Zenbook-UX330UA-AH54-AH5Q-2.png)
 
 This project is to give the UX330UAK a complete and functional build of macOS Mojave `10.14.5` using the guide from  [here](https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH) with modified kexts.
@@ -76,6 +76,8 @@ If you use a USB wifi adapter look for drivers from that model.
   - Set DVMT to **64M**
   - Change boot priority to USB
 5. For Installation go to the [wiki](https://github.com/Rybo713/UX330UA-macOS/wiki/Installation).
+or
+6. For Installation download UX330UAK macOS Guide in my repo for a more detailed and in-depth guide.
 
 # Undervolting
 - Follow the [guide](https://www.insanelymac.com/forum/topic/331775-guide-how-to-undervolt-your-haswell-and-above-cpu/).
