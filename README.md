@@ -64,6 +64,7 @@ If you use a USB wifi adapter look for drivers from that model.
 - ~~macOS doesn't recognize bluetooth after waking from sleep (Says Bluetooth: Not Available)~~
 - Display sometimes blinks for a split second (Not very noticable)
 - Auto brightness is very inconsistent (Goes up and down for no reason) (I just turned it off)
+- Black screen on monitor when using micro HDMI 
 
 # Pre-Installation
 1. Replace original wifi chipset with a DW1560 (Recommended) or use a USB wifi adapter (Not recommended)
