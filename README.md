@@ -1,4 +1,4 @@
-# macOS for Asus Zenbook UX330UAK (August 10, 2019)
+# macOS for Asus Zenbook UX330UAK (September 8, 2019)
 ![UX330UAK](https://laptoping.com/specs/wp-content/uploads/2017/05/Asus-Zenbook-UX330UA-AH54-AH5Q-2.png)
 
 This project is to give the UX330UAK a complete and functional build of macOS Mojave `10.14.6` using the guide from  [here](https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH) with modified kexts.
@@ -26,14 +26,14 @@ Wifi: Broadcom DW1560
 
 Bluetooth: Broadcom DW1560 with firmware `1502.1786_v5882`
 
-Bootloader: Clover v2.5k_r5042
+Bootloader: Clover v2.5k_r5079
 
 ## Note
 Your laptop may or may not have the exact specs as mine. Results may vary. If you need help, please ask.
 If you use a USB wifi adapter look for drivers from that model.
 
 ## Tested Configurations
-- macOS 10.14.3 (18D42) - 10.14.6 (18G87)
+- macOS 10.14.3 (18D42) - 10.14.6 (18G95)
 - BIOS 311
 
 # What Works
