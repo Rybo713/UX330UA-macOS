@@ -57,6 +57,7 @@ If you use a USB wifi adapter look for drivers from that model.
 
 # What doesn't work
 - Fingerprint sensor - Touch ID (It will never work) (Disabled with NoTouchID.kext)
+- micro HDMI Port
 
 # Bugs
 - Closing the lid to sleep doesn't work (For workaround: Go to  on the status bar and press sleep)
