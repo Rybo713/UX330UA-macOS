@@ -1,32 +1,10 @@
 ---
 name: Bug Report
-about: Bug Report
+about: Any bugs you found that isn't on the Readme? Use this.
 title: "[BUG]"
 labels: bug
 assignees: Rybo713
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
--  Device [e.g. UX330UAK]
- - OS: [e.g. macOS]
- - Version [e.g. 10.14.4]
-
-**Additional context**
-Add any other context about the problem here.
