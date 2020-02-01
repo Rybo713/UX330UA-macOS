@@ -1,4 +1,4 @@
-# macOS for Asus Zenbook UX330UAK (October 5, 2019)
+# macOS for Asus Zenbook UX330UAK (February 1, 2020)
 ![UX330UAK](https://laptoping.com/specs/wp-content/uploads/2017/05/Asus-Zenbook-UX330UA-AH54-AH5Q-2.png)
 
 This project is to give the UX330UAK a complete and functional build of macOS Mojave `10.14.6` using the guide from  [here](https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH) with modified kexts.
