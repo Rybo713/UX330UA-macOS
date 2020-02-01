@@ -679,6 +679,11 @@
 		<true/>
 		<key>KernelPm</key>
 		<true/>
+		<key>ForceKextsToLoad</key>
+		<array>
+			<string>\System\Library\Extensions\IOGraphicsFamily.kext</string>
+			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
+		</array>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
