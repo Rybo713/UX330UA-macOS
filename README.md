@@ -4,29 +4,29 @@
 This project is to give the UX330UAK a complete and functional build of macOS Mojave `10.14.6` using the guide from  [here](https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH) with modified kexts.
 
 ## My Specs
-Model: UX330UAK
+**Model:** UX330UAK
 
-Bios: 311
+**Bios:** 311
 
-CPU: 2.71GHz Intel i5-7200U (0x606)
+**CPU:** 2.71GHz Intel i5-7200U (0x606)
 
-GPU: Intel HD620 1536MB (0x5916)
+**GPU:** Intel HD620 1536MB (0x5916)
 
-RAM: 1867MHz Micron 8GB Dual Channel LPDDR3
+**RAM:** 1867MHz Micron 8GB Dual Channel LPDDR3
 
-Display: 13.3" AUO272D IPS Anti-Glare FHD, 1920x1080, 60Hz
+**Display:** 13.3" AUO272D IPS Anti-Glare FHD, 1920x1080, 60Hz
 
-Storage: PCI-E x2 NMVe Adata XPG SX8200 Pro 256GB
+**Storage:** PCI-E x2 NMVe Adata XPG SX8200 Pro 256GB
 
-Partition Type: APFS (TRIM automatically enabled by APFS)
+**Partition Type:** APFS (TRIM automatically enabled by APFS)
 
-SD Card Reader: Alcor Micro, Corp. (0x6366)
+**SD Card Reader:** Alcor Micro, Corp. (0x6366)
 
-Wifi: Broadcom DW1560
+**Wifi:** Broadcom DW1560
 
-Bluetooth: Broadcom DW1560 with firmware `1502.1786_v5882`
+**Bluetooth:** Broadcom DW1560 with firmware `1502.1786_v5882`
 
-Bootloader: Clover v2.5k_r5093
+**Bootloader:** Clover v2.5k_r5093
 
 ## Note
 Your laptop may or may not have the exact specs as mine. Results may vary. If you need help, please ask.
